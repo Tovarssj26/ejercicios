@@ -1,0 +1,21 @@
+/*Una empresa X trabaja con laminas de hierro para fabricar una pieza. Se conoce que (a) la lamina
+mide en promedio 4 metros de largo por 1.5 metros de ancho; (b) la pieza a fabricar consume 0.5
+metros en total. Se requiere que calcule y muestre cuantas piezas se fabrican con una lamina y
+cuanto sera el desperdicio.*/
+public class dieciseis {
+    public static void main(String[] args) {
+        
+        double largoLam = 4.0; // Largo de la lamina en metros
+        double anchoLam = 1.5; // Ancho de la lamina en metros
+        double areaLam = largoLam * anchoLam; // Area de la lamina en metros cuadrados
+
+        double areaPieza = 0.5; // Area consumida por cada pieza en metros cuadrados
+
+        int numPiezas = (int) (areaLam / areaPieza); // Numero de piezas que se pueden fabricar
+        double desperdicio = areaLam - (numPiezas * areaPieza); // Desperdicio en metros cuadrados
+
+        System.out.println("Numero de piezas que se pueden fabricar con una lamina: " + numPiezas);
+        System.out.println("Desperdicio de material: " + desperdicio + " metros cuadrados");    
+
+    }
+}
